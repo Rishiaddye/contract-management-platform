@@ -1,0 +1,50 @@
+@media (max-width: 1024px) {
+  .page-container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  html, body {
+    font-size: 14px;
+  }
+
+  .app-container {
+    min-height: 100vh;
+  }
+
+  .main-content {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-header {
+    gap: 8px;
+  }
+
+  .filter-container {
+    gap: 8px;
+  }
+
+  .stats-grid {
+    gap: 12px;
+  }
+
+  .blueprint-grid {
+    gap: 16px;
+  }
+}
+
+@media print {
+  .btn,
+  .tab-button,
+  .filter-btn {
+    display: none;
+  }
+
+  .page-container {
+    background: white;
+    padding: 0;
+  }
+}
