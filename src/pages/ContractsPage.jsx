@@ -32,6 +32,7 @@ export default function ContractsPage({
           <h2 className="page-title">Contracts</h2>
           <p className="page-subtitle">Manage and track contract lifecycle</p>
         </div>
+
         <button onClick={onNewContract} className="btn btn-primary">
           <Plus size={20} /> New Contract
         </button>
@@ -78,18 +79,24 @@ export default function ContractsPage({
             {filteredContracts.length > 0 ? (
               filteredContracts.map(contract => {
                 const blueprint = getBlueprint(contract.blueprintId);
+
                 return (
                   <tr key={contract.id}>
-                    <td>{contract.name}</td>
-                    <td>{blueprint?.name || 'Unknown'}</td>
+                    <td data-label="Contract Name">{contract.name}</td>
 
-                    {/* GLASS STATUS BADGE */}
-                    <td>
+                    <td data-label="Blueprint">
+                      {blueprint?.name || 'Unknown'}
+                    </td>
+
+                    <td data-label="Status">
                       <StatusBadge status={contract.status} />
                     </td>
 
-                    <td>{contract.createdDate}</td>
-                    <td>
+                    <td data-label="Created Date">
+                      {contract.createdDate}
+                    </td>
+
+                    <td data-label="Actions">
                       <div className="action-buttons">
                         <button
                           onClick={() => onViewContract(contract)}
