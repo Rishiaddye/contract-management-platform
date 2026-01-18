@@ -59,19 +59,43 @@ This application allows users to manage contracts, reusable blueprints, and trac
 
 ##  Project Structure
 
-contract-management/
+contract-mg/
+├── node_modules/
+├── public/
+│   └── vite.svg
 ├── src/
-│ ├── components/
-│ ├── pages/
-│ ├── data/
-│ ├── utils/
-│ ├── styles/
-│ ├── App.jsx
-│ └── main.jsx
+│   ├── components/
+│   │   ├── BlueprintModal.jsx
+│   │   ├── ContractDetailModal.jsx
+│   │   ├── Header.jsx
+│   │   ├── Modal.jsx
+│   │   ├── StatusBadge.jsx
+│   │   └── Tabs.jsx
+│   ├── data/
+│   │   ├── initialData.js
+│   │   └── lifecycle.js
+│   ├── pages/
+│   │   ├── BlueprintsPage.jsx
+│   │   └── ContractsPage.jsx
+│   ├── styles/
+│   │   ├── global.css
+│   │   ├── header.css
+│   │   ├── modal.css
+│   │   ├── responsive.css
+│   │   └── table.css
+│   ├── utils/
+│   │   └── storage.js
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── .gitignore
+├── eslint.config.js
 ├── index.html
 ├── package.json
-├── vite.config.js
-└── README.md
+├── package-lock.json
+├── README.md
+└── vite.config.js
+
 
 
 ---
