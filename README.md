@@ -1,7 +1,3 @@
-
-# contract-management-platform
-Frontend Contract Management Platform built with React and Vite, featuring reusable contract blueprints, controlled lifecycle states, and a clean component-based architecture.
-
 #  Contract Management Platform
 
 A professional, frontend-only Contract Management Platform built using **React + Vite**.  
