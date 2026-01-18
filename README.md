@@ -98,8 +98,6 @@ contract-mg/
 
 
 
----
-
 ##  Mock Data
 
 This project uses **mock seed data** to simulate backend responses:
@@ -131,4 +129,4 @@ http://localhost:5173
 Rishi Addye  
 BCA Student – Frontend Development Project
 
->>>>>>> b485f6d (Initial commit: Contract Management Platform)
+
